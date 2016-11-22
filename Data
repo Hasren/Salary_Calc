@@ -1,0 +1,32 @@
+
+#include <stdafx.h> 
+#include <iostream>
+
+using namespace std;
+
+double getValueFromUser()
+{
+	cout << "Enter desired hourly wage: ";
+	double a;
+	cin >> a;
+	return a;
+}
+
+
+int main()
+{
+	double x = getValueFromUser();
+	int y = 2080; //This is the number of weeks worked in a year. 52 weeks X 40 hours per week
+	double z = x * y;
+
+	cout << "Yearly Salary" << endl;
+
+	cout << z <<"$ per year" << endl;
+
+//I did this to prevent the application from closing immediately after receiving the input for X. 
+	char c;
+	cin >> c;
+
+	; return 0;
+	
+}
